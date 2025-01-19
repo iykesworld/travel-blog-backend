@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 // parse options
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://travel-blog-frontend-257z.onrender.com"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
